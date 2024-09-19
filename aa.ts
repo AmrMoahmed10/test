@@ -13,7 +13,7 @@ let a: readonly [string, string] = ["h", "d"];
 //   Blue,
 // }
 // let color: Color = Color.Green;
-// console.log(color);
+// console.log(color);dsfdsfdsfsd
 
 class Amr {
   public data: Array<string> = ["string"];
