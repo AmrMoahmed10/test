@@ -51,14 +51,45 @@
 // console.log("3. بعد إنشاء الـ Promise");
 
 // console.log("5. نهاية البرنامج");
-fetch("https://api.github.com/users/elzerowebschool/repos")
-  .then((result) => {
-    return result.json();
-  })
-  .then((full) => {
-    full.length = 10;
-    return full;
-  })
-  .then((ten) => {
-    console.log(ten[0].name);
-  });
+// fetch("https://api.github.com/users/elzerowebschool/repos")
+//   .then((result) => {
+//     return result.json();
+//   })
+//   .then((full) => {
+//     full.length = 10;
+//     return full;
+//   })
+//   .then((ten) => {
+//     console.log(ten[0].name);
+//   });
+
+let date = Date.now();
+console.log(date);
+
+let day = new Date().getTime();
+let getHours = new Date().getHours();
+let getMonth = new Date().getMonth();
+let getFullYear = new Date().getFullYear();
+let getDay = new Date("2024 9 21").getDay();
+let getDate = new Date("2024 9 1").getDate();
+let getMinutes = new Date().getMinutes();
+console.log(day);
+console.log(getHours);
+console.log(getMonth);
+console.log(getFullYear);
+console.log(getDay);
+console.log(getDate);
+console.log(getMinutes);
+
+////////////////////////////////////////////////////////////////
+
+let date1 = new Date();
+
+// date1.setTime(0);
+// console.log(date1);
+// date1.setTime(10000);
+// console.log(date1);
+// date1.setDate(35);
+// console.log(date1);
+date1.setMilliseconds(100).getTime();
+console.log(date1);
